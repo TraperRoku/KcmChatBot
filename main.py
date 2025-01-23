@@ -136,7 +136,8 @@ if __name__ == "__main__":
         print(speech2text(recording))
 
         question = speech2text(recording)
-        if(question == "stop"):
+        #if(question == "stop"):
+        if question.strip().lower() == "stop":
             break
         answer = chatboot(question)
 
